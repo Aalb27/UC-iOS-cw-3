@@ -46,10 +46,8 @@ struct ExtractedView: View {
     var body: some View {
         HStack {
             Text(text)
-                    .padding()
+//                    .padding()
                 Spacer()
-            Spacer()
-            Spacer()
             
             ZStack{
                 Circle()
@@ -63,7 +61,6 @@ struct ExtractedView: View {
                         counterr += 1
                     }
             }
-            Spacer()
-        }.ignoresSafeArea()
+        }.padding()
     }
 }
